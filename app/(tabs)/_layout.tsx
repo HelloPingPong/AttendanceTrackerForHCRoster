@@ -22,13 +22,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="roster"
+        name="roster-tab"
         options={{
           title: 'Roster',
           tabBarIcon: ({ color, size }) => (
             <Users size={size} color={color} />
           ),
-          href: '/roster',
+          // Remove the href property to avoid the conflict
         }}
       />
       <Tabs.Screen
